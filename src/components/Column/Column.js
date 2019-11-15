@@ -15,16 +15,16 @@ class Column extends React.Component {
     }
 
     static propTypes = {
-        title: PropTypes.node.isRequired,
-        cards: PropTypes.array,
-        icon: PropTypes.node
+      title: PropTypes.node.isRequired,
+      cards: PropTypes.array,
+      icon: PropTypes.node,
     }
 
     static defaultProps = {
       icon: settings.defaultColumnIcon,
     }
 
-       /* Add new object to this.state.cards*/ 
+    /* Add new object to this.state.cards*/ 
     addCard(title){
       this.setState(state => (
         {
@@ -33,8 +33,8 @@ class Column extends React.Component {
             {
               key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
               title,          
-            }
-          ]
+            },
+          ],
         }
       ));
     }
@@ -42,25 +42,25 @@ class Column extends React.Component {
     render() {
       return (
         <section className={styles.component}>
-            <h3 className={styles.title}>{this.props.title}
-              <span className={styles.icon}>
-                <Icon name={this.props.icon}/>
-              </span>
-            </h3>
+          <h3 className={styles.title}>{this.props.title}
+            <span className={styles.icon}>
+              <Icon name={this.props.icon}/>
+            </span>
+          </h3>
             
-            <div className={styles.columns}>
-              {this.state.cards.map(({key, ...cardProps}) => (
+          <div className={styles.columns}>
+            {this.state.cards.map(({key, ...cardProps}) => (
               <Card key={key} {...cardProps} />
-              ))}
-            </div>  
+            ))}
+          </div>  
 
-            <div className={styles.creator}>
-              <Creator text={settings.columnCreatorText} action={title => this.addCard(title)}/>
-            </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={title => this.addCard(title)}/>
+          </div>
 
         </section>
-      )
+      );
     }
-  }
+}
   
-  export default Column;
+export default Column;
