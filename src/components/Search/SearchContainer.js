@@ -4,7 +4,7 @@ import {
   getSearchString,
   countVisibleCards,
   countAllCards,
-//  createAction_changeSearchString,
+  createAction_changeSearchString,
 } from '../../redux/searchStringRedux';
 
 const mapStateToProps = (state) => ({
@@ -14,7 +14,6 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  // eslint-disable-next-line no-undef
   changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
 });
 
