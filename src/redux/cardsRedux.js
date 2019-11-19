@@ -1,7 +1,7 @@
 import shortid from 'shortid';
 
 // selectors getCardsForColumn
-export const getCardsForColumn = ({cards}, columnId,searchString) => 
+export const getCardsForColumn = ({cards,searchString}, columnId) => 
   cards.filter(card => 
     card.columnId == columnId 
     &&
