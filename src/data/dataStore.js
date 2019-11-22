@@ -149,3 +149,15 @@ const initialStoreData = {
 };
 
 export default initialStoreData;
+
+export const infoData = {
+  title: 'Info Data',
+  image: 'https://images.pexels.com/photos/3233081/pexels-photo-3233081.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  description: 'This is Info section text.',
+};
+
+export const FAQData = {
+  title: 'FAQ Section',
+  image: 'https://images.pexels.com/photos/3156079/pexels-photo-3156079.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  description: 'This is FAQ section.',
+};
