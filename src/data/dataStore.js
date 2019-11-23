@@ -79,6 +79,24 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Coding challenge 1',
+    description: 'HTML,CSS,JS',
+    image: 'https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Coding challenge 2',
+    description: 'React',
+    image: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+  },
+  {
+    id: 'list-4',
+    title: 'Coding challenge 3',
+    description: 'Node.js',
+    image: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_960_720.png',
+  },
 ];
 
 const columns = [
