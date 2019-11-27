@@ -15,7 +15,7 @@ class SearchResults extends React.Component {
     render() {
       const {cards} = this.props;
       return (
-        <section>
+        <section className={styles.component}>
           <Container>
             <div className={styles.columns}>
               {cards.map(cardsData => (
